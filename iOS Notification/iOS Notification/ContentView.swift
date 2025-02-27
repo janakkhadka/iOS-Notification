@@ -30,6 +30,7 @@ struct ContentView: View {
         content.title = "First Notification"
         content.body = "my first notification hurray"
         content.sound = UNNotificationSound.default
+        content.badge = 1  //yo badge vaneko app ko icon maa katiota notification xa vanera ho
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         

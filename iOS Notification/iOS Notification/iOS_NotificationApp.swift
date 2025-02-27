@@ -27,7 +27,6 @@ struct iOS_NotificationApp: App {
                 }
             }
 
-            // Check current notification settings
             UNUserNotificationCenter.current().getNotificationSettings { settings in
                 print("Notification settings: \(settings.authorizationStatus)")
             }
